@@ -4,14 +4,6 @@
       <p class="footer-home__description-left">{{ description }}</p>
       <div class="footer-home__pipe"></div>
     </section>
-    <form class="footer-home__form" action="">
-      <input
-        type="search"
-        class="footer-home__input footer-home__input--user"
-        placeholder="Buscar usuários"
-        required
-      />
-    </form>
     <section class="footer-home__card-right">
       <div class="footer-home__pipe"></div>
       <p class="footer-home__description-right">Application refresh in</p>
