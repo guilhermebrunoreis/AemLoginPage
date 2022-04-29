@@ -1,0 +1,65 @@
+.header-home {
+  background: linear-gradient(105.96deg, #ffffff 0%, #f0f0f0 97.86%);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #222222;
+
+  &__figure {
+    margin: 0;
+  }
+
+  &__card-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__location {
+    margin: 0;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+
+  &__temp {
+    margin: 0;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.813rem;
+
+    &::before {
+      content: url('/content/dam/vue/img/icons/cloudy.png');
+      position: relative;
+      top: -10px;
+      left: -10px;
+    }
+  }
+
+  &__card-middle {
+    display: none;
+    text-align: center;
+  }
+
+  &__clock {
+    margin: 0;
+    font-weight: 700;
+    font-size: 9rem;
+    line-height: 7.063rem;
+  }
+
+  &__date {
+    margin: 0;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+@media (min-width: 1024px) {
+  .header-home__card-middle {
+    display: block;
+  }
+}

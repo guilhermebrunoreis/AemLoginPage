@@ -6,6 +6,15 @@ import Image from './components/Image/Image'
 import Card from './components/Card/Card'
 import Footer from './components/Footer/Footer'
 import Margin from './components/Margin/Margin'
+import BannerFigureLogin from './components/Login/BannerFigureLogin'
+import LogoFigureLogin from './components/Login/LogoFigureLogin'
+import LogoDesktopLogin from './components/Login/LogoDesktopLogin'
+import CardLogin from './components/Login/CardLogin'
+import FormLogin from './components/Login/FormLogin'
+import BannerHome from './components/Home/BannerHome'
+import FooterHome from './components/Home/FooterHome'
+import HeaderHome from './components/Home/HeaderHome'
+import CardHome from './components/Home/CardHome'
 
 import {
   withComponentMappingContext,
@@ -66,3 +75,56 @@ MapTo('vue/components/container')(
     }
   }
 )
+
+MapTo('vue/components/login/banner')(BannerFigureLogin, {
+  emptyLabel: 'Image',
+  isEmpty: function (props) {
+    return !props || !props.src || props.src.trim().length < 1
+  },
+  resourceType: 'vue/components/login/banner'
+})
+MapTo('vue/components/login/logo-mobile')(LogoFigureLogin, {
+  emptyLabel: 'Mobile Logo',
+  isEmpty: function (props) {
+    return !props || !props.src || props.src.trim().length < 1
+  },
+  resourceType: 'vue/components/login/logo-mobile'
+})
+MapTo('vue/components/login/logo-desktop')(LogoDesktopLogin, {
+  emptyLabel: 'Desktop Logo',
+  isEmpty: function (props) {
+    return !props || !props.src || props.src.trim().length < 1
+  },
+  resourceType: 'vue/components/login/logo-desktop'
+})
+MapTo('vue/components/login/form')(FormLogin, {
+  emptyLabel: 'Image',
+  isEmpty: function (props) {
+    return !props || !props.src || props.src.trim().length < 1
+  },
+  resourceType: 'vue/components/login/form'
+})
+MapTo('vue/components/login/card')(CardLogin, EditConfig)
+
+MapTo('vue/components/home/banner')(BannerHome, {
+  emptyLabel: 'Image',
+  isEmpty: function (props) {
+    return !props || !props.src || props.src.trim().length < 1
+  },
+  resourceType: 'vue/components/home/banner'
+})
+MapTo('vue/components/home/footer')(FooterHome, {
+  emptyLabel: 'Image',
+  isEmpty: function (props) {
+    return !props || !props.src || props.src.trim().length < 1
+  },
+  resourceType: 'vue/components/home/footer'
+})
+MapTo('vue/components/home/header')(HeaderHome, {
+  emptyLabel: 'Image',
+  isEmpty: function (props) {
+    return !props || !props.src || props.src.trim().length < 1
+  },
+  resourceType: 'vue/components/home/header'
+})
+MapTo('vue/components/home/card')(CardHome, EditConfig)

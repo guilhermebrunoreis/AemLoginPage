@@ -1,0 +1,14 @@
+.banner-login {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .banner-login {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1080px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

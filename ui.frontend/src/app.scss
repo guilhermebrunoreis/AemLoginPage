@@ -1,1 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap');
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  color: #e0e0e0;
+  font-family: 'Mark Pro', sans-serif;
+  position: relative;
+  margin: 0;
+}
+.bg--gray {
+  background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
+}
+
+.bg--beige {
+  background: linear-gradient(105.96deg, #ffffff 0%, #f0f0f0 97.86%);
+}

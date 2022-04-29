@@ -1,0 +1,9 @@
+.logo-figure-login {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  .logo-figure-login {
+   display: none;
+  }
+}

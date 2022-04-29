@@ -6,4 +6,5 @@
     <spa-app-template/>
     <spa-page-template/>
     <rep:policy/>
+    <full-page/>
 </jcr:root>

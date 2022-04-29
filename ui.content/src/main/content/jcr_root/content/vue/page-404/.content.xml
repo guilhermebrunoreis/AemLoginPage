@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-04-19T15:27:37.153-03:00"
+        cq:lastModified="{Date}2022-04-13T11:26:23.024-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/vue/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
@@ -84,13 +84,11 @@
                         <image_792793243
                             jcr:created="{Date}2022-04-12T18:43:30.266-03:00"
                             jcr:createdBy="admin"
-                            jcr:lastModified="{Date}2022-04-19T15:27:37.149-03:00"
+                            jcr:lastModified="{Date}2022-04-12T18:43:34.465-03:00"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="vue/components/image"
-                            displayPopupTitle="false"
-                            fileReference="/content/dam/wknd/en/adventures/cycling-southern-utah/AdobeStock_185324648.jpg"
-                            isDecorative="true">
+                            fileReference="/content/dam/vue/img/image-page-404.png">
                             <cq:responsive jcr:primaryType="nt:unstructured">
                                 <phone
                                     jcr:primaryType="nt:unstructured"

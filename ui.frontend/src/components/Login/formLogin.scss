@@ -1,0 +1,87 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__body {
+    max-width: 300px;
+    width: 100%;
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+  }
+
+  &__input {
+    max-width: 379px;
+    width: 100%;
+    height: 60px;
+    background: #26292c;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #e0e0e0;
+
+    &--icon-user {
+      background: url('/content/dam/vue/img/icons/user.png') no-repeat 95%;
+      background-size: 15px;
+    }
+
+    &--icon-lock {
+      background: url('/content/dam/vue/img/icons/lock.png') no-repeat 95%;
+      background-size: 15px;
+    }   
+
+    &--error {
+      border: 1px solid #e9b425;
+    }
+  }
+
+  &__message-error {
+    margin: 0 1.5rem;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #e9b425;
+  }
+
+  &__button {
+    margin: 5rem 0;
+    max-width: 379px;
+    width: 100%;
+    height: 67px;
+    background: linear-gradient(90deg, #ff2d04 0%, #c13216 100%);
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.438rem;
+    color: #ffffff;
+    cursor: pointer;
+
+    &:hover {
+      background: #c13216;
+      border: #c13216;
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+
+    &--small-margin {
+      margin-top: 2.5rem;
+    }
+  }
+}
